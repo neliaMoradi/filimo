@@ -1,22 +1,22 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const l of r)if(l.type==="childList")for(const s of l.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&e(s)}).observe(document,{childList:!0,subtree:!0});function n(r){const l={};return r.integrity&&(l.integrity=r.integrity),r.referrerPolicy&&(l.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?l.credentials="include":r.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function e(r){if(r.ep)return;r.ep=!0;const l=n(r);fetch(r.href,l)}})();let c=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-left-start")).json()).map(e=>`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const l of r)if(l.type==="childList")for(const s of l.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&e(s)}).observe(document,{childList:!0,subtree:!0});function n(r){const l={};return r.integrity&&(l.integrity=r.integrity),r.referrerPolicy&&(l.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?l.credentials="include":r.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function e(r){if(r.ep)return;r.ep=!0;const l=n(r);fetch(r.href,l)}})();let c=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-left-start)).map(e=>`
             <div class="menu__left__start"><a href="${e.link}">${e.name}</a></div>
            
        
-        `),document.querySelector(".menu .menu__left").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},_=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-left-join")).json()).map(e=>`
+        `),document.querySelector(".menu .menu__left").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},_=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-left-join)).map(e=>`
             
            <div class="menu__left__join"><a href="${e.link}">${e.icon}${e.name}</a></div> 
        
-        `),document.querySelector(".menu .menu__left").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},d=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-right")).json()).map(e=>`
+        `),document.querySelector(".menu .menu__left").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},d=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-right)).map(e=>`
     <div class="menu__right__item">
     <a href="${e.link}">
     ${e.icon}
     <p>${e.name}</p>
     </a>
-   </div>`),document.querySelector(".menu .menu__right nav").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},h=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-right-item-1")).json()).map(e=>`
+   </div>`),document.querySelector(".menu .menu__right nav").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},h=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-right-item-1)).map(e=>`
       <div class="menu__right__item__1"><a href="${e.link}">
   ${e.icon}
 </a></div>
-   `),document.querySelector(".menu .menu__right").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},m=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/vary")).json()).map(e=>`
+   `),document.querySelector(".menu .menu__right").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},m=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(vary)).map(e=>`
             
                <h2>
                ${e.title}
@@ -27,7 +27,7 @@
             <a href="${e.link1}">${e.name1}</a>
             <a href="${e.link2}">${e.name2}</a> 
        
-        `),document.querySelector(".vary .vary__left .vary__left__center").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},u=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/online")).json()).map(e=>`
+        `),document.querySelector(".vary .vary__left .vary__left__center").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},u=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(online)).map(e=>`
              <h2>
       ${e.name1}</h2>
         <div class="online__items">
@@ -64,7 +64,7 @@
           </div>
         </div>
        
-        `),document.querySelector(".online").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},f=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/last-section")).json()).map(e=>`
+        `),document.querySelector(".online").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},f=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(last-section)).map(e=>`
            <div class="last__section__image"><img src="${e.link1}" ></div>
             <div class="last__section__items">
               <h2><span>
@@ -90,11 +90,11 @@ ${e.icon2}
               </a>
             </div>
        
-        `),document.querySelector(".last__section").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},g=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/vary-image")).json()).map(e=>`
+        `),document.querySelector(".last__section").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},g=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(vary-image)).map(e=>`
             
                     <img src="${e.link}" />
        
-        `),document.querySelector(".vary .vary__right").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},y=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/all")).json()).map(e=>`
+        `),document.querySelector(".vary .vary__right").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},y=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(all)).map(e=>`
            <div class="all__right"><img src="${e.link1}" ></div>
           <div class="all__left">
             <div class="all__left__title">
@@ -133,7 +133,7 @@ ${e.icon2}
               ${e.name9}</a></div>
           </div>
        
-        `),document.querySelector(".all").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},p=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/tv")).json()).map(e=>`
+        `),document.querySelector(".all").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},p=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(tv)).map(e=>`
          <div class="tv__right">
           <div class="tv__right__title">
             <h2>
@@ -175,7 +175,7 @@ ${e.icon2}
         </div>
         <div class="tv__left"><img src="  ${e.link4}"   /></div>
        
-        `),document.querySelector(".tv").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},v=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/last-menu-right")).json()).map(e=>e.dropdown.length>0?`
+        `),document.querySelector(".tv").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},v=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(last-menu-right)).map(e=>e.dropdown.length>0?`
        
         <div class="last__menu__right__items">
           <a href="${e.link}">
@@ -201,7 +201,7 @@ ${e.icon2}
 
             ${e.name}
           </a></div>
-      `),document.querySelector(".last__menu .last__menu__right nav").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},$=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/last-menu-left")).json()).map(e=>`
+      `),document.querySelector(".last__menu .last__menu__right nav").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},$=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(last-menu-left)).map(e=>`
         <div>
             <a href=" ${e.link}">
             ${e.icon}
@@ -220,7 +220,7 @@ ${e.icon2}
           
       
        
-        `),document.querySelector(".last__menu .last__menu__left ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},j=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/free-slider")).json()).map(e=>`
+        `),document.querySelector(".last__menu .last__menu__left ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},j=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(free-slider)).map(e=>`
          <div class="free__slider__slides__slide">
               <a href="${e.link}"
                 ><img src="${e.img}" />
@@ -231,47 +231,47 @@ ${e.icon2}
                 <h3>${e.name}</h3>
               </a>
             </div>
-        `),document.querySelector(".free > .free__slider > .free__slider__slides").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},b=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/free-title")).json()).map(e=>`
+        `),document.querySelector(".free > .free__slider > .free__slider__slides").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},b=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(free-title)).map(e=>`
        ${e.name}
-        `),document.querySelector(".free > h2").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},q=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-mobile-right")).json()).map(e=>`
+        `),document.querySelector(".free > h2").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},q=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-mobile-right)).map(e=>`
 <a href="${e.link}"> ${e.icon}</a>
-    `),document.querySelector(".menu__mobile .menu__mobile__right ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},w=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-mobile-left-icon")).json()).map(e=>`
+    `),document.querySelector(".menu__mobile .menu__mobile__right ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},w=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-mobile-left-icon)).map(e=>`
 <a href="${e.link}"> ${e.icon}</a>
-    `),document.querySelector(".menu__mobile .menu__mobile__left ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},S=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-mobile-left-join")).json()).map(e=>`
+    `),document.querySelector(".menu__mobile .menu__mobile__left ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},S=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-mobile-left-join)).map(e=>`
 <a href="${e.link}"> ${e.icon} ${e.name}</a>
 
-    `),document.querySelector(".menu__mobile .menu__mobile__left .menu__mobile__left__join ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},k=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-mobile-left-start")).json()).map(e=>`
+    `),document.querySelector(".menu__mobile .menu__mobile__left .menu__mobile__left__join ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},k=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-mobile-left-start)).map(e=>`
 <a href="${e.link}">  ${e.name}</a>
 
-    `),document.querySelector(".menu__mobile .menu__mobile__left .menu__mobile__left__start ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},L=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/menu-right-item-3")).json()).map(e=>`
+    `),document.querySelector(".menu__mobile .menu__mobile__left .menu__mobile__left__start ").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},L=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(menu-right-item-3)).map(e=>`
     <div class="menu__right__item menu__right__item__3">
     <a >
     ${e.icon}
     <p>${e.name}</p>
     </a>
-   </div>`),document.querySelector(".menu .menu__right nav").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},A=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/first-title")).json()).map(e=>`
+   </div>`),document.querySelector(".menu .menu__right nav").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},A=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(first-title)).map(e=>`
    <h3>${e.name1}</h3>
   <h2>${e.name2}</h2>
        
-        `),document.querySelector(".first").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},M=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/first-items")).json()).map(e=>`
+        `),document.querySelector(".first").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},M=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(first-items)).map(e=>`
      <h2><span>
       ${e.icon}
       </span> 
 ${e.name}     
        </h2>
        
-        `),document.querySelector(".first .first__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},H=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/first-link")).json()).map(e=>`
+        `),document.querySelector(".first .first__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},H=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(first-link)).map(e=>`
         <a href="${e.link}">
     ${e.icon}
     ${e.name}
   </a>
        
-        `),document.querySelector(".first .first__link").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},T=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/first-last")).json()).map(e=>`
+        `),document.querySelector(".first .first__link").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},T=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(first-last)).map(e=>`
     ${e.icon}       
     ${e.name}       
-        `),document.querySelector(".first .first__last").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},x=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/comment-title")).json()).map(e=>`
+        `),document.querySelector(".first .first__last").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},x=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(comment-title)).map(e=>`
        ${e.name}
-        `),document.querySelector(".comment > h2").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},E=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/comment-slider")).json()).map(e=>`
+        `),document.querySelector(".comment > h2").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},E=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(comment-slider)).map(e=>`
          <div class="comment__slider__slides__slide">
               <div class="comment__slider__slides__slide__top">
                 <div class="comment__slider__slides__slide__top__right">
@@ -283,11 +283,11 @@ ${e.name}
               </div>
               <p> ${e.description} </p>
             </div>
-        `),document.querySelector(".comment > .comment__slider > .comment__slider__slides").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},F=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/question-title")).json()).map(e=>`
+        `),document.querySelector(".comment > .comment__slider > .comment__slider__slides").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},F=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(question-title)).map(e=>`
     <h2>${e.title}</h2>
           <h3>${e.name}</h3>
        
-        `),document.querySelector(".question > .question__title").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},O=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/question-item-1")).json()).map(e=>`
+        `),document.querySelector(".question > .question__title").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},O=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(question-item-1)).map(e=>`
    <div class="question__item__1">
             <div class="question__item__1__top">
               <h2>${e.name}</h2>
@@ -298,7 +298,7 @@ ${e.name}
             </p>
           </div>
        
-        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},X=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/question-item-2")).json()).map(e=>`
+        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},X=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(question-item-2)).map(e=>`
    <div class="question__item__2">
             <div class="question__item__2__top">
               <h2>${e.name}</h2>
@@ -309,7 +309,7 @@ ${e.name}
             </p>
           </div>
        
-        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},Q=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/question-item-3")).json()).map(e=>`
+        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},Q=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(question-item-3)).map(e=>`
    <div class="question__item__3">
             <div class="question__item__3__top">
               <h2>${e.name}</h2>
@@ -320,7 +320,7 @@ ${e.name}
             </p>
           </div>
        
-        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},P=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/question-item-4")).json()).map(e=>`
+        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},P=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(question-item-4)).map(e=>`
    <div class="question__item__4">
             <div class="question__item__4__top">
               <h2>${e.name}</h2>
@@ -331,7 +331,7 @@ ${e.name}
             </p>
           </div>
        
-        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},C=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/second-top")).json()).map(e=>`
+        `),document.querySelector(".question > .question__items").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},C=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(second-top)).map(e=>`
  <h2> ${e.name}    </h2>
           <div class="second__top__hover">
             <a href="${e.link} ">
@@ -343,11 +343,11 @@ ${e.name}
             </a>
           </div>
        
-        `),document.querySelector(".second .second__top").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},D=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/second-bottom-item")).json()).map(e=>`
+        `),document.querySelector(".second .second__top").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},D=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(second-bottom-item)).map(e=>`
   <div class="second__bottom__item"><a href="${e.link}"><img src="${e.img}" >
             <div class="second__bottom__item__absolute">${e.icon} </div></a></div>
        
-        `),document.querySelector(".second .second__bottom").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},N=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/third-top")).json()).map(e=>`
+        `),document.querySelector(".second .second__bottom").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},N=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(third-top)).map(e=>`
   <div class="third__top__right">
             <h2><a href="${e.link}">
 ${e.name1}
@@ -367,7 +367,7 @@ ${e.description}
             <img src="${e.img}" >
           </div>
        
-        `),document.querySelector(".third .third__top").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},Y=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json/third-bottom")).json()).map(e=>`
+        `),document.querySelector(".third .third__top").insertAdjacentHTML("afterbegin",t.join(""))}catch(a){console.log(a.message)}},Y=async()=>{let t="";try{t=(await(await fetch("https://neliamoradi.github.io/filimoApi/db.json")).json(third-bottom)).map(e=>`
   
        <div class="third__slider__slides__slide"><a href="${e.link}">
                 <img src="${e.img}" >
